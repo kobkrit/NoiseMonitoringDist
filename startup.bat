@@ -14,4 +14,4 @@ GOTO :EOF
 
 :startnext
 cd ..
-NoiseMonitorWin.exe setting.json
+NoiseMonitorWin.exe setting.txt
