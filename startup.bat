@@ -1,6 +1,6 @@
 @ECHO OFF
 taskkill /F /IM "HttpLD.exe" /T
-taskkill /F /IM "NoiseMonitor" /T
+taskkill /F /IM "NoiseMonitorWin.exe" /T
 
 cd HTTPD
 START HttpLD.exe
@@ -9,10 +9,9 @@ FOR /L %%i IN (1,1,100) DO (
   (TASKLIST | FIND /I "HttpLD.exe") && GOTO :startnext
   timeout /t 5
 )
-ECHO Timeout waiting for program1.exe to start
+ECHO Timeout waiting for NoiseMontoringWin.exe to start
 GOTO :EOF
 
 :startnext
 cd ..
-NoiseMonitor
-:: or START program2.exe
+NoiseMonitorWin.exe setting.json
