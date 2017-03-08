@@ -1,5 +1,5 @@
 {
   "stationName": "st00",
   "hash": "lasonDavis",
-  "token": "245552af8dccfc6"
+  "token": "e7f134c6c628a08"
 }
